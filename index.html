@@ -1,136 +1,128 @@
 <!DOCTYPE html>
 <html>
-<title>Fernando Celmer</title>
-<meta charset="UTF-8">
-<meta NAME="KEYWORDS"    CONTENT="Fernando Celmer, fernandocelmer, FernandoCelmer">
-<meta NAME="DESCRIPTION" CONTENT="Fernando Celmer">
-<link rel="icon" href="img/logo/FernandoCelmer.png" />	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Courier", Courier}
-body, html {height: 100%}
-.bgimg {
-	background-color:#000000;
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-.fc_background_01{
-    background-image: url('img/background/background-carl-sagan-space.gif');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;   
-}
-.fc_background_02{
-	background-color:#000000;
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-</style>
+    <title>Fernando Celmer</title>
+    <meta charset="UTF-8">
+    <meta NAME="KEYWORDS"    CONTENT="Fernando Celmer, fernandocelmer, FernandoCelmer">
+    <meta NAME="DESCRIPTION" CONTENT="Fernando Celmer">
+    <link rel="icon" href="img/logo/FernandoCelmer.png" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Courier", Courier}
+        body, html {height: 100%}
+        .bgimg {
+            background-color:#000000;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .fc_background_01{
+            background-image: url('img/background/background-carl-sagan-space.gif');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;   
+        }
+        .fc_background_02{
+            background-color:#000000;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 
-<script>
-var audio, playbtn, mutebtn, seek_bar;
-function initAudioPlayer(){
-	audio = new Audio();
-	audio.src = "sound/p a l e   b l u e   d o t.mp3";
-	audio.loop = true;
-	// Set object references
-	playbtn = document.getElementById("playpausebtn");
-	// Add Event Handling
-	playbtn.addEventListener("click",playPause);
-	// Functions
-	function playPause(){
-		if(audio.paused){
-		    audio.play();	  
-	    } else {
-		    audio.pause();
-	    }
-	}
-}
-window.addEventListener("load", initAudioPlayer);
-</script>
+    <script>
+        var audio, playbtn, mutebtn, seek_bar;
+        function initAudioPlayer(){
+            audio = new Audio();
+            audio.src = "sound/p a l e   b l u e   d o t.mp3";
+            audio.loop = true;
+            // Set object references
+            playbtn = document.getElementById("playpausebtn");
+            // Add Event Handling
+            playbtn.addEventListener("click",playPause);
+            // Functions
+            function playPause(){
+                if(audio.paused){
+                    audio.play();	  
+                } else {
+                    audio.pause();
+                }
+            }
+        }
+        window.addEventListener("load", initAudioPlayer);
+    </script>
 
-<script language="javascript" type="text/javascript">
-function next(){
-var obj=document.getElementById('top');
-if(obj.className=='fc_background_01'){
-  obj.className='fc_background_02';
-}else{
-  obj.className='fc_background_01';
- }
-}
-</script>
+    <script language="javascript" type="text/javascript">
+        function next(){
+        var obj=document.getElementById('top');
+            if(obj.className=='fc_background_01'){
+                obj.className='fc_background_02';
+            }else{
+                obj.className='fc_background_01';
+            }
+        }
+    </script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110658980-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'UA-110658980-1');
-</script>
+        gtag('config', 'UA-110658980-1');
+    </script>
 
-<body>
+    <body>
+        <nav class="w3-sidebar w3-black w3-animate-left w3-xxlarge" style="display:none;padding-top:150px;left:0;z-index:2" id="mySidebar">
+            <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topleft" style="padding:0 12px;">
+                <i class="fa fa-remove"></i>
+            </a>
+            <div class="w3-bar-block w3-center">
+            
+                <h1 class="w3-text-theme" name="projects"><b>PROJECTS</b></h1>
+                    <a href="https://www.boopixel.com.br/"  target="_blank" class="w3-bar-item w3-button">BooPixel</a>
+                    <a href="http://www.theowline.com/"  target="_blank" class="w3-bar-item w3-button">TheOwLine</a>
+                    <a href="http://upyexplorer.com/"  target="_blank" class="w3-bar-item w3-button">UpyExplorer</a>
+                    <a href="http://www.indexoffy.com"  target="_blank" class="w3-bar-item w3-button">IndexOffy</a>
+                <footer class="w3-container w3-padding w3-center w3-opacity w3-light-white w3-xlarge">
+                    <p class="w3-medium">Powered by <a href="https://www.fernandocelmer.com">fernandocelmer.com</a></p>
+                    <p class="w3-medium">Help from <a href="https://www.w3schools.com" target="_blank">w3.css</a></p>
+                    <p class="w3-medium">Music by <a href="https://soundcloud.com/orisoma/p-a-l-e-b-l-u-e-d-o-t" target="_blank">.shen</a></p>
+                </footer>
+            </div>
+        </nav>
 
-<nav class="w3-sidebar w3-black w3-animate-left w3-xxlarge" style="display:none;padding-top:150px;left:0;z-index:2" id="mySidebar">
-  
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topleft" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  
-  <div class="w3-bar-block w3-center">
-  
-  <h1 class="w3-text-theme" name="projects"><b>PROJECTS</b></h1>
-    <a href="https://www.boopixel.com.br/"  target="_blank" class="w3-bar-item w3-button">BooPixel</a>
-    <a href="http://www.theowline.com/"  target="_blank" class="w3-bar-item w3-button">TheOwLine</a>
-    <a href="http://upyexplorer.com/"  target="_blank" class="w3-bar-item w3-button">UpyExplorer</a>
-    <a href="http://www.indexoffy.com"  target="_blank" class="w3-bar-item w3-button">IndexOffy</a>
-  
-  <footer class="w3-container w3-padding w3-center w3-opacity w3-light-white w3-xlarge">
-  <p class="w3-medium">Powered by <a href="https://www.fernandocelmer.com">fernandocelmer.com</a></p>
-  <p class="w3-medium">Help from <a href="https://www.w3schools.com" target="_blank">w3.css</a></p>
-  <p class="w3-medium">Music by <a href="https://soundcloud.com/orisoma/p-a-l-e-b-l-u-e-d-o-t" target="_blank">.shen</a></p>
-   
-</footer>
-  </div>
-</nav>
+        <div  id="top" class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 
-<div  id="top" class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+            <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;left:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-  <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;left:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+            <header class="w3-container w3-center w3-text-white" style="padding:128px 16px" id="home">
+                <h1 class="w3-xxxlarge w3-animate-top w3-wide"><a href="#" onclick="next();" id="playpausebtn">FERNANDO CELMER</a></h1>
+                <hr class="w3-border-grey" style="margin:auto;width:40%">
+                <h6><span class="w3-tag">for great ideas, contact me at <span class="email">email@fernandocelmer.com</span></span></h6>
+                </br>
+                <a href="https://www.behance.net/fernandocelmer"  target="_blank"><img src="img/icons/icon-behance.png" alt="behance" class="w3-hover-opacity" width="35" height="35"></a>
+                <a href="https://github.com/FernandoCelmer"  target="_blank"><img src="img/icons/icon-github.png" alt="github" class="w3-hover-opacity" width="35" height="35"></a>
+                <a href="https://medium.com/@fernandocelmer"  target="_blank"><img src="img/icons/icon-medium.png" alt="medium" class="w3-hover-opacity" width="35" height="35"></a>
+                <a href="https://www.linkedin.com/in/fernando-celmer/"  target="_blank"><img src="img/icons/icon-linkedin.png" alt="linkedin" class="w3-hover-opacity" width="35" height="35"></a>
+                <a href="https://open.spotify.com/user/fernandocelmer"  target="_blank"><img src="img/icons/icon-spotify.png" alt="spotify" class="w3-hover-opacity" width="35" height="35"></a>
+                <a href="https://soundcloud.com/fernandocelmer/tracks"  target="_blank"><img src="img/icons/icon-soundcloud.png" alt="soundcloud" class="w3-hover-opacity" width="35" height="35"></a>
+                </br>
+                </br>
+            </header>
+        </div>
 
-  <header class="w3-container w3-center w3-text-white" style="padding:128px 16px" id="home">
-    <h1 class="w3-xxxlarge w3-animate-top w3-wide"><a href="#" onclick="next();" id="playpausebtn">FERNANDO CELMER</a></h1>
-	<hr class="w3-border-grey" style="margin:auto;width:40%">
-    <h6><span class="w3-tag">for great ideas, contact me at <span class="email">email@fernandocelmer.com</span></span></h6>
-	</br>
-	<a href="https://www.behance.net/fernandocelmer"  target="_blank"><img src="img/icons/icon-behance.png" alt="behance" class="w3-hover-opacity" width="35" height="35"></a>
-	<a href="https://github.com/FernandoCelmer"  target="_blank"><img src="img/icons/icon-github.png" alt="github" class="w3-hover-opacity" width="35" height="35"></a>
-	<a href="https://medium.com/@fernandocelmer"  target="_blank"><img src="img/icons/icon-medium.png" alt="medium" class="w3-hover-opacity" width="35" height="35"></a>
-	<a href="https://www.linkedin.com/in/fernando-celmer/"  target="_blank"><img src="img/icons/icon-linkedin.png" alt="linkedin" class="w3-hover-opacity" width="35" height="35"></a>
-  <a href="https://open.spotify.com/user/fernandocelmer"  target="_blank"><img src="img/icons/icon-spotify.png" alt="spotify" class="w3-hover-opacity" width="35" height="35"></a>
-  <a href="https://soundcloud.com/fernandocelmer/tracks"  target="_blank"><img src="img/icons/icon-soundcloud.png" alt="soundcloud" class="w3-hover-opacity" width="35" height="35"></a>
-    	</br>
-	</br>
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "100%";
+                document.getElementById("mySidebar").style.display = "block";
+            }
 
-  </header>
+            function closeNav() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
 
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</body>
+    </body>
 </html>
